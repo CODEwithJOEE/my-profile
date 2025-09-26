@@ -24,7 +24,8 @@ export default function Header() {
       <nav className="nav">
         <div className="brand">
           <NavLink to="/" className="brand-link">
-            MyProfile
+            <span className="brand-badge">JOE</span>
+            <span className="brand-text">Personal Website!</span>
           </NavLink>
         </div>
 
@@ -33,6 +34,7 @@ export default function Header() {
           <button
             className="theme-toggle"
             aria-label="Toggle dark mode"
+            aria-pressed={dark}
             onClick={() => setTheme(dark ? "light" : "dark")}
             title={dark ? "Switch to light" : "Switch to dark"}
           >
