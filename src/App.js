@@ -1,25 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
 
-function App() {
+// Global layout pieces
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// Pages
+import Home from "./Section/Home";
+import About from "./Section/About";
+import Projects from "./Section/Projects";
+import Experience from "./Section/Experience";
+import Skills from "./Section/Skills";
+import Education from "./Section/Education";
+import Contact from "./Section/Contact";
+
+import ScrollToTop from "./components/ScrollToTop";
+import "./App.css";
+
+// Layout keeps Header/Footer on every page and renders the active page in between
+function Layout() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-root">
+      <Header />
+      <main className="container">
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      {/* Scroll to the top whenever the route changes */}
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/contact" element={<Contact />} />
+
+          {/* 404 fallback -> send unknown routes back home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
+}
