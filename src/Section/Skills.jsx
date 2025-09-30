@@ -32,7 +32,7 @@ export default function Skills() {
     },
     {
       title: "Version Control & Collaboration",
-      items: [{ name: "Git / GitHub", icon: "/icons/GitHub.svg" }],
+      items: [{ name: "Git / GitHub", icon: "/icons/github.svg" }],
     },
     {
       title: "UI/UX & Design",
