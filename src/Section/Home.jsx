@@ -40,7 +40,11 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/icons/github.png" alt="GitHub" className="social-icon" />{" "}
+            <img
+              src="/icons/Github_icon.png"
+              alt="GitHub"
+              className="social-icon"
+            />{" "}
             GitHub
           </a>
 
@@ -50,7 +54,7 @@ export default function Home() {
             rel="noreferrer"
           >
             <img
-              src="/icons/LinkIn.png"
+              src="/icons/LinkIn_icon.png"
               alt="LinkedIn"
               className="social-icon"
             />{" "}
@@ -63,7 +67,7 @@ export default function Home() {
             rel="noreferrer"
           >
             <img
-              src="/icons/fbIcon.png"
+              src="/icons/Facebook_icon.webp"
               alt="Facebook"
               className="social-icon"
             />{" "}

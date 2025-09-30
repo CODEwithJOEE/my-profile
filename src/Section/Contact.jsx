@@ -36,32 +36,52 @@ export default function Contact() {
           </form>
 
           <div className="contact-socials">
-            <a href="mailto:yourmail@gmail.com" className="social-btn">
-              📧 Gmail
+            <a href="joemarie27r@gmail.com" className="social-btn">
+              <img
+                src="/icons/Gmail_icon.webp"
+                alt="GitHub"
+                className="social-icon"
+              />{" "}
+              Gmail
             </a>
             <a
-              href="https://facebook.com/yourprofile"
+              href="https://www.facebook.com/joemarie.amante.ronday/"
               target="_blank"
               rel="noreferrer"
               className="social-btn"
             >
-              📘 Facebook
+              <img
+                src="/icons/Facebook_icon.webp"
+                alt="GitHub"
+                className="social-icon"
+              />{" "}
+              Facebook
             </a>
             <a
-              href="https://instagram.com/yourprofile"
+              href="https://www.instagram.com/joemari_e69/?hl=de"
               target="_blank"
               rel="noreferrer"
               className="social-btn"
             >
-              📸 Instagram
+              <img
+                src="/icons/Instagram_icon.webp"
+                alt="GitHub"
+                className="social-icon"
+              />{" "}
+              Instagram
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://ph.linkedin.com/in/joemarie-ronday-908a9a360"
               target="_blank"
               rel="noreferrer"
               className="social-btn"
             >
-              💼 LinkedIn
+              <img
+                src="/icons/LinkIn_icon.png"
+                alt="GitHub"
+                className="social-icon"
+              />{" "}
+              Gmail
             </a>
           </div>
         </div>
