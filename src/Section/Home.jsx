@@ -40,20 +40,33 @@ export default function Home() {
             target="_blank"
             rel="noreferrer"
           >
+            <img src="/icons/github.png" alt="GitHub" className="social-icon" />{" "}
             GitHub
           </a>
+
           <a
-            href="https://linkedin.com/in/yourhandle"
+            href="https://ph.linkedin.com/in/joemarie-ronday-908a9a360"
             target="_blank"
             rel="noreferrer"
           >
+            <img
+              src="/icons/LinkIn.png"
+              alt="LinkedIn"
+              className="social-icon"
+            />{" "}
             LinkedIn
           </a>
+
           <a
-            href="https://facebook.com/yourhandle"
+            href="https://www.facebook.com/joemarie.amante.ronday/"
             target="_blank"
             rel="noreferrer"
           >
+            <img
+              src="/icons/fbIcon.png"
+              alt="Facebook"
+              className="social-icon"
+            />{" "}
             Facebook
           </a>
         </div>

@@ -42,7 +42,7 @@ export default function Projects() {
       img: "/projects/myprofilewebsite.png",
       desc: "A portfolio website showcasing projects, and skills. Built with HTML, styled CSS, and JavaScript features to ensure accessibility, and mobile-friendly design across devices.",
       status: "Completed",
-      link: "https://example.com/client-portfolio",
+      link: "https://codewithjoee.github.io/MyWebsiteProfile/",
       tech: [
         { name: "HTML", icon: "/icons/HTML5_logo.png" },
         { name: "CSS", icon: "/icons/CSS3_logo.svg" },
@@ -54,7 +54,7 @@ export default function Projects() {
       img: "/projects/profilewebsite.jpg",
       desc: "A sample profile website showcasing projects, about, educations, Experience, and skills. Built with HTML, styled CSS, and JavaScript.",
       status: "Live",
-      link: "https://example.com/sample-portfolio",
+      link: "https://codewithjoee.github.io/WebsiteProfile2.0/",
       tech: [
         { name: "HTML", icon: "/icons/HTML5_logo.png" },
         { name: "CSS", icon: "/icons/CSS3_logo.svg" },

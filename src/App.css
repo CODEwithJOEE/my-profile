@@ -41,6 +41,13 @@ a {
   border-radius: 16px;
   box-shadow: var(--shadow);
 }
+.social-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
 /* =========================================================
    HEADER
    ========================================================= */
