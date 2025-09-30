@@ -34,7 +34,7 @@ export default function Contact() {
               aria-label="Visit my Facebook profile"
             >
               <img
-                src="/icons/Facebook_icon.webp"
+                src="/icons/facebook_icon.webp"
                 alt="Facebook"
                 className="social-icon"
                 loading="lazy"
