@@ -67,7 +67,7 @@ export default function Home() {
             rel="noreferrer"
           >
             <img
-              src="/icons/Facebook_icon.webp"
+              src="/icons/facebook_icon.webp"
               alt="Facebook"
               className="social-icon"
             />{" "}
