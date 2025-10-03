@@ -19,7 +19,7 @@ import Experience from "./Section/Experience";
 import Skills from "./Section/Skills";
 import Education from "./Section/Education";
 import Contact from "./Section/Contact";
-
+import Certificates from "./Section/Certificates";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 
@@ -50,6 +50,7 @@ export default function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/certificates" element={<Certificates />} />
 
           {/* 404 fallback -> send unknown routes back home */}
           <Route path="*" element={<Navigate to="/" replace />} />

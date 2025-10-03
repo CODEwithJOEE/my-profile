@@ -421,6 +421,71 @@ a {
   display: flex;
   gap: 10px;
 }
+/* Certificates Page */
+.certificates {
+  padding: 60px 20px;
+  background: var(--bg);
+}
+
+.certificates__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.certificates__header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.certificates__header h1 {
+  font-size: clamp(1.6rem, 2.2vw, 2.2rem);
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.certificates__header .muted {
+  color: var(--muted);
+}
+
+.certificates__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.certificate {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.certificate:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.certificate img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.certificate h3 {
+  margin: 8px 0 4px;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.certificate p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
 
 /* =========================================================
    EXPERIENCE

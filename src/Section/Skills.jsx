@@ -45,7 +45,7 @@ export default function Skills() {
       title: "Hosting & Deployment",
       items: [
         { name: "XAMPP", icon: "/icons/Xampp.png" },
-        { name: "GitHub Pages", icon: "/icons/github.svg" },
+        { name: "GitHub Pages", icon: "/icons/Github_icon.png" },
         { name: "WordPress Hosting", icon: "/icons/Wordpress-logo.png" },
       ],
     },

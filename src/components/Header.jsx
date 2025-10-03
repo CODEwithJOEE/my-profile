@@ -92,6 +92,11 @@ export default function Header() {
               Contact
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/certificates" className={linkClass}>
+              Certificates
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
