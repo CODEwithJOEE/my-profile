@@ -421,38 +421,40 @@ a {
   display: flex;
   gap: 10px;
 }
+/* =========================================================
+    CERTIFICATES
+    ======================================================== */
+
 /* Certificates Page */
 .certificates {
   padding: 60px 20px;
   background: var(--bg);
 }
-
 .certificates__inner {
   max-width: 1100px;
   margin: 0 auto;
 }
-
 .certificates__header {
   text-align: center;
   margin-bottom: 32px;
 }
-
 .certificates__header h1 {
   font-size: clamp(1.6rem, 2.2vw, 2.2rem);
   margin-bottom: 8px;
   color: var(--text);
 }
-
 .certificates__header .muted {
   color: var(--muted);
 }
 
+/* Grid */
 .certificates__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 20px;
 }
 
+/* Card */
 .certificate {
   background: var(--card);
   border: 1px solid var(--border);
@@ -462,12 +464,10 @@ a {
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .certificate:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
-
 .certificate img {
   width: 100%;
   max-height: 200px;
@@ -475,16 +475,82 @@ a {
   border-radius: 10px;
   margin-bottom: 12px;
 }
-
+.certificate img.clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.certificate img.clickable:hover {
+  transform: scale(1.03);
+}
 .certificate h3 {
   margin: 8px 0 4px;
   font-size: 1.1rem;
   color: var(--text);
 }
-
 .certificate p {
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+/* Modal (lightbox) */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+  padding: 20px;
+  overflow-y: auto;
+}
+.modal__content {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.modal__img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.modal__desc {
+  font-size: 1rem;
+  color: var(--text);
+  margin-top: 12px;
+}
+
+/* Close button */
+.modal__close {
+  position: fixed; /* fixed so it stays in the corner while scrolling */
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+}
+.modal__close:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* Responsive tweak */
+@media (max-width: 480px) {
+  .certificates {
+    padding: 40px 14px;
+  }
+  .modal__content {
+    padding: 16px;
+  }
 }
 
 /* =========================================================
