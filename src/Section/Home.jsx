@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import useTypewriter from "../hooks/useTypewriter";
+import useAge from "../hooks/useAge"; // <-- add this
 import profilePic from "../assets/logo.png";
 import profile from "../data/profile";
 
@@ -15,6 +16,8 @@ export default function Home() {
     deletingSpeed: 55,
     pauseBetween: 1100,
   });
+
+  const age = useAge(profile.birthdateISO); // <-- compute age
 
   return (
     <section className="hero">
@@ -76,7 +79,7 @@ export default function Home() {
         </div>
 
         <p className="hero__meta">
-          {profile.age} years old · Born: {profile.Birthdate} · {profile.Status}
+          {age} years old · Born: {profile.birthdateDisplay} · {profile.Status}
           <br />
           Address: {profile.Address}
         </p>
@@ -92,7 +95,6 @@ export default function Home() {
       </div>
 
       <div className="hero__avatar">
-        {/* ✅ Now uses imported image */}
         <img src={profilePic} alt="Joemarie portrait" />
       </div>
     </section>
