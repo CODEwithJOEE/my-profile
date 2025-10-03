@@ -25,7 +25,7 @@ export default function Header() {
         <div className="brand">
           <NavLink to="/" className="brand-link">
             <span className="brand-badge">JOE</span>
-            <span className="brand-text">Personal Website!</span>
+            <span className="brand-text">Portfolio</span>
           </NavLink>
         </div>
 
