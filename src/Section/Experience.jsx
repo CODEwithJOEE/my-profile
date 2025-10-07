@@ -54,7 +54,14 @@ export default function Experience() {
 
       <div className="exp-list">
         {jobs.map((job, i) => (
-          <article className="exp-card" key={i}>
+          <article
+            className="exp-card slide-up"
+            key={i}
+            style={{
+              "--slide-delay": `${i * 120}ms`, // stagger each box
+              "--slide-duration": "1000ms",
+            }}
+          >
             <div className="exp-card__head">
               <h2>{job.company}</h2>
               <span className="badge">{job.role}</span>

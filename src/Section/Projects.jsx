@@ -63,7 +63,7 @@ export default function Projects() {
     },
     {
       title: "OBI Services Corporate Website",
-      img: "/projects/OBI-Homepage.png", // ✅ lives in public/projects/
+      img: "/projects/OBI-Homepage.png",
       desc: "Corporate site work including SEO optimization, UI improvements, content updates, and performance enhancements.",
       status: "Ongoing",
       link: "https://obi.services/",
@@ -84,7 +84,15 @@ export default function Projects() {
 
       <div className="projects-grid">
         {projects.map((p, i) => (
-          <article className="project-card" key={i}>
+          <article
+            className="project-card slide-up"
+            key={i}
+            style={{
+              // Delay increases per card
+              "--slide-delay": `${i * 120}ms`,
+              "--slide-duration": "1000ms",
+            }}
+          >
             <div className="project-thumb">
               <img src={p.img} alt={`${p.title} preview`} />
               {p.status && (

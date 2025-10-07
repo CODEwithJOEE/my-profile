@@ -13,7 +13,7 @@ const CERTS = [
     description:
       "Awarded to Joemarie A. Ronday for achieving Top 1 Agent in Team WebOps, recognizing outstanding performance, dedication, and excellence.",
   },
-  /*{
+  {
     id: "react-advanced-2025",
     title: "React.js Advanced",
     org: "ABC Bootcamp",
@@ -22,6 +22,7 @@ const CERTS = [
     description:
       "Completed an advanced React.js training covering hooks, context, performance optimization, and full app deployment.",
   },
+  /*
   {
     id: "php-mysql-2023",
     title: "PHP & MySQL",
@@ -49,8 +50,15 @@ export default function Certificates() {
           </header>
 
           <div className="certificates__grid">
-            {CERTS.map((c) => (
-              <article className="certificate" key={c.id}>
+            {CERTS.map((c, i) => (
+              <article
+                className="certificate slide-up"
+                key={c.id}
+                style={{
+                  "--slide-delay": `${i * 120}ms`,
+                  "--slide-duration": "1000ms",
+                }}
+              >
                 <img
                   src={c.img}
                   alt={`${c.title} certificate`}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import SlideUp from "../components/SlideUp";
 export default function Skills() {
   const categories = [
     {
@@ -72,29 +72,31 @@ export default function Skills() {
   ];
 
   return (
-    <section className="skills">
-      <h1>Skills</h1>
-      <div className="skills-grid">
-        {categories.map((cat, i) => (
-          <div key={i} className="skill-card">
-            <h2>{cat.title}</h2>
-            <div className="skill-items">
-              {cat.items.map((item, j) => (
-                <span key={j} className="skill-pill">
-                  {item.icon && (
-                    <img
-                      src={item.icon}
-                      alt={item.name + " icon"}
-                      className="skill-icon"
-                    />
-                  )}
-                  {item.name}
-                </span>
-              ))}
+    <SlideUp duration={1000}>
+      <section className="skills">
+        <h1>Skills</h1>
+        <div className="skills-grid">
+          {categories.map((cat, i) => (
+            <div key={i} className="skill-card">
+              <h2>{cat.title}</h2>
+              <div className="skill-items">
+                {cat.items.map((item, j) => (
+                  <span key={j} className="skill-pill">
+                    {item.icon && (
+                      <img
+                        src={item.icon}
+                        alt={item.name + " icon"}
+                        className="skill-icon"
+                      />
+                    )}
+                    {item.name}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
+    </SlideUp>
   );
 }

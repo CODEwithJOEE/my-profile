@@ -928,3 +928,19 @@ a {
     grid-template-columns: 1fr;
   }
 }
+/* =========================================================
+   PROJECTS ANIMATIONS
+   ========================================================= */
+
+/* Base animation */
+.slide-up {
+  transform: translateY(30px);
+  animation: slideUp var(--slide-duration, 600ms) ease-out
+    var(--slide-delay, 0ms) forwards;
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+  }
+}

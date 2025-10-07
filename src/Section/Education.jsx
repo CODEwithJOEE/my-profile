@@ -1,4 +1,5 @@
 import React from "react";
+import SlideUp from "../components/SlideUp";
 
 export default function Education() {
   const schools = [
@@ -41,21 +42,23 @@ export default function Education() {
   ];
 
   return (
-    <section className="education">
-      <h1>Education</h1>
-      <div className="edu-list">
-        {schools.map((school, i) => (
-          <div key={i} className="edu-card">
-            <h2>{school.name}</h2>
-            <p className="edu-year">{school.year}</p>
-            <ul>
-              {school.details.map((d, j) => (
-                <li key={j}>{d}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
+    <SlideUp duration={1000}>
+      <section className="education">
+        <h1>Education</h1>
+        <div className="edu-list">
+          {schools.map((school, i) => (
+            <div key={i} className="edu-card">
+              <h2>{school.name}</h2>
+              <p className="edu-year">{school.year}</p>
+              <ul>
+                {school.details.map((d, j) => (
+                  <li key={j}>{d}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    </SlideUp>
   );
 }
