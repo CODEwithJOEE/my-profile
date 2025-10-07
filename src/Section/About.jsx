@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import aboutImg from "../assets/about.png";
+import aboutImg from "../assets/about.webp";
 import useCounter from "../hooks/useCounter";
 import SlideUp from "../components/SlideUp";
 

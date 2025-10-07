@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import useTypewriter from "../hooks/useTypewriter";
 import useAge from "../hooks/useAge";
-import profilePic from "../assets/logo.png";
+import profilePic from "../assets/logo.webp";
 import profile from "../data/profile";
 import SlideUp from "../components/SlideUp";
 

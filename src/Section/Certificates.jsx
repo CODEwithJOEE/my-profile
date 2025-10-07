@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import cert1 from "../assets/Certificate.jpeg";
+import cert1 from "../assets/Certificate.webp";
 import cert2 from "../assets/Certificate.jpeg";
 import cert3 from "../assets/Certificate.jpeg";
 
@@ -13,6 +13,7 @@ const CERTS = [
     description:
       "Awarded to Joemarie A. Ronday for achieving Top 1 Agent in Team WebOps, recognizing outstanding performance, dedication, and excellence.",
   },
+  /*
   {
     id: "react-advanced-2025",
     title: "React.js Advanced",
@@ -22,7 +23,7 @@ const CERTS = [
     description:
       "Completed an advanced React.js training covering hooks, context, performance optimization, and full app deployment.",
   },
-  /*
+
   {
     id: "php-mysql-2023",
     title: "PHP & MySQL",
