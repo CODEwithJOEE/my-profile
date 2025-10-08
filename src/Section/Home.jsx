@@ -1,8 +1,7 @@
 import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import useTypewriter from "../hooks/useTypewriter";
-import useAge from "../hooks/useAge";
-import profilePic from "../assets/logo.webp"; // ensure this is the hero image
+import useAge from "../hooks/useAge"; // ensure this is the hero image
 import profile from "../data/profile";
 import SlideUp from "../components/SlideUp";
 
@@ -104,7 +103,7 @@ export default function Home() {
 
         <div className="hero__avatar">
           <img
-            src={profilePic} // if using import from src/assets
+            src={`${process.env.PUBLIC_URL}/images/logo.webp`}
             alt="Portrait of Joemarie A. Ronday"
             width={360}
             height={480}
