@@ -107,7 +107,7 @@ export default function Home() {
             alt="Portrait of Joemarie A. Ronday"
             width={360}
             height={480}
-            fetchpriority="high"
+            fetchPriority="high" // <- capital P
             decoding="async"
           />
         </div>

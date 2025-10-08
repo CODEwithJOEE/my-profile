@@ -10,27 +10,26 @@
       content="Joemarie A. Ronday — Full-Stack Web Developer focused on clean code, fast performance, and great UX."
     />
 
-    <!-- Favicon (ICO or 32x32 PNG) -->
+    <!-- Favicon and App Icons -->
     <link rel="icon" href="%PUBLIC_URL%/icons/favicon.ico" />
-    <!-- iOS home screen icon must be exactly 180x180 -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/icon-180.png" />
 
-    <!-- PWA manifest (ensure 192 and 512 PNGs exist in manifest.json) -->
+    <!-- Manifest (for PWA) -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- OPTIONAL: If hero image is in /public -->
-    <!-- Place file at /public/images/hero.webp -->
-    <!-- Preload helps LCP only if path is correct and image is above-the-fold -->
-    <link rel="preload" as="image" href="%PUBLIC_URL%/images/logo.webp" />
+    <!-- ✅ Preload your hero image (LCP optimization) -->
+    <link
+      rel="preload"
+      as="image"
+      href="%PUBLIC_URL%/images/logo.webp"
+      fetchpriority="high"
+    />
 
     <title>My Profile Website</title>
   </head>
+
   <body>
-    <noscript>
-      <strong>JavaScript is disabled.</strong>
-      This website requires JavaScript to display properly. Please enable it in
-      your browser settings.
-    </noscript>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
 </html>
