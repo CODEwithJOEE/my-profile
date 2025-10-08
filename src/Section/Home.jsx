@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import useTypewriter from "../hooks/useTypewriter";
 import useAge from "../hooks/useAge";
-import profilePic from "../assets/logo.webp";
+import profilePic from "../assets/logo.webp"; // ensure this is the hero image
 import profile from "../data/profile";
 import SlideUp from "../components/SlideUp";
 
@@ -24,7 +24,9 @@ export default function Home() {
         <div className="hero__content">
           <h1 className="hero__title">
             Hi, I’m <span className="accent">{profile.name}</span>{" "}
-            <span className="wave">👋</span>
+            <span className="wave" aria-hidden>
+              👋
+            </span>
           </h1>
 
           <p className="hero__lead">{profile.title}</p>
@@ -40,11 +42,13 @@ export default function Home() {
             <a
               href="https://github.com/CODEwithJOEE"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img
                 src="/icons/Github_icon.png"
-                alt="GitHub"
+                width="20"
+                height="20"
+                alt=""
                 className="social-icon"
               />{" "}
               GitHub
@@ -53,11 +57,13 @@ export default function Home() {
             <a
               href="https://ph.linkedin.com/in/joemarie-ronday-908a9a360"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img
                 src="/icons/LinkIn_icon.png"
-                alt="LinkedIn"
+                width="20"
+                height="20"
+                alt=""
                 className="social-icon"
               />{" "}
               LinkedIn
@@ -66,11 +72,13 @@ export default function Home() {
             <a
               href="https://www.facebook.com/joemarie.amante.ronday/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <img
                 src="/icons/facebook_icon.webp"
-                alt="Facebook"
+                width="20"
+                height="20"
+                alt=""
                 className="social-icon"
               />{" "}
               Facebook
@@ -95,7 +103,14 @@ export default function Home() {
         </div>
 
         <div className="hero__avatar">
-          <img src={profilePic} alt="Joemarie portrait" />
+          <img
+            src={profilePic} // if using import from src/assets
+            alt="Portrait of Joemarie A. Ronday"
+            width={360}
+            height={480}
+            fetchpriority="high"
+            decoding="async"
+          />
         </div>
       </section>
     </SlideUp>
