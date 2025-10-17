@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import cert1 from "../assets/Certificate.webp";
-import cert2 from "../assets/Certificate.jpeg";
-import cert3 from "../assets/Certificate.jpeg";
+import cert2 from "../assets/Certificate.webp";
+import cert3 from "../assets/Certificate.webp";
 
 const CERTS = [
   {

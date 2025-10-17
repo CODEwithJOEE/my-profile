@@ -1,7 +1,7 @@
 const profile = {
   name: "Joemarie",
   title:
-    "Full-Stack Web Developer focused on clean code, fast performance, and great user experience.",
+    "Front-end Web Developer focused on clean code, fast performance, and great user experience.",
   specializing: "Web Developer specializing in ",
   birthdateISO: "2001-10-27", // <-- used to compute age
   birthdateDisplay: "October 27, 2001", // <-- shown in UI
